@@ -7,12 +7,16 @@
 <?php
 
 function codeform() {
-echo '<form>
+echo '<form method="POST" action="#">
 
  Voeg hier je code in.<input type="text" name="inlogcode"> 
  <input type="Submit" value="Verzenden">
  </form>';
 
+}
+
+function vragen() {
+echo 'hier komen vragen';
 }
 
 ?>
