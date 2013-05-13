@@ -20,12 +20,13 @@ mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("DB connectie mislukt");
 
 $myusername=$_POST['myusername']; 
-$mypassword=$_POST['mypassword']; 
+$mypassword=md5($_POST['mypassword']); 
 
-$sql="SELECT * FROM $tbl_name WHERE account='$myusername' and password='$mypassword'";
+$sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);
 $count =mysql_num_rows($result);
 if($count==1){
+$_SESSION['loggedon']="1";
 $_SESSION['user']=$myusername;
 $_SESSION['log']=true;
 echo 'welkom '; 
