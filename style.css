@@ -2,6 +2,8 @@ body
 {
 	background-image:url('achtergrond.jpg');
 	background-repeat:no-repeat;
+	min-height: 100%;
+  	min-width: 1024px;
 }
 
 
