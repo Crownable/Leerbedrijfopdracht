@@ -33,6 +33,7 @@ echo 'welkom ';
 echo $myusername;
 echo $return;
 echo $loguit;
+header('Location: index.php');
 
 }
 else {

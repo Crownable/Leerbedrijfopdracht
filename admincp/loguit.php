@@ -5,7 +5,7 @@ session_destroy();
 <html>
 <body>
 u bent uitgelogd
-<form action="login.php">
+<form action="index.php">
 <input type="submit" value="login" />
 </form>
 </body>

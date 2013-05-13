@@ -7,7 +7,12 @@ $loguit= '<form action="loguit.php">
 
 if (isset($_SESSION['loggedon']))
 {
+$user = $_SESSION['user'];
 echo $loguit;
+
+echo 'Welkom '.$user.' bij het admin CP';
+
+
 exit;
 
 }
