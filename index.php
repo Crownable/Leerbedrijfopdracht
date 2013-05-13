@@ -7,12 +7,16 @@
 <?php
 
 function codeform() {
-echo '<form>
+echo '<form method="POST" action="#">
 
  Voeg hier je code in.<input type="text" name="inlogcode"> 
  <input type="Submit" value="Verzenden">
  </form>';
 
+}
+
+function vragen() {
+echo 'hier komen vragen';
 }
 
 ?>
@@ -24,13 +28,18 @@ echo '<form>
 <?php
 $code = "testcode123";
 
-if (!isset($_POST['code'])) 
+if (!isset($_POST['inlogcode'])) 
 {
 codeform();
 exit;
 
 }
 
+if ($code == $_POST['inlogcode']) {
+
+vragen();
+
+}
 
 ?>
 
