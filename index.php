@@ -24,13 +24,18 @@ echo '<form>
 <?php
 $code = "testcode123";
 
-if (!isset($_POST['code'])) 
+if (!isset($_POST['inlogcode'])) 
 {
 codeform();
 exit;
 
 }
 
+if ($code == $_POST['inlogcode']) {
+
+vragen();
+
+}
 
 ?>
 
