@@ -5,7 +5,7 @@
 
 function codeform() {
 echo '<form>
- Voeg hier je code in.<input type="text" name="inlogcode"> 
+ Voeg hier je code in:<input type="text" name="inlogcode"> 
  <input type="Submit" value="Verzenden">
  </form>';
 }
