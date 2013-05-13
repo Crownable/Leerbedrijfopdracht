@@ -7,11 +7,11 @@
 <?php
 
 function codeform() {
-echo '<form method="POST" action="#">
+echo '<div id="Code"><form method="POST" action="#">
 
  Voeg hier je code in.<input type="text" name="inlogcode"> 
  <input type="Submit" value="Verzenden">
- </form>';
+ </form></div>';
 
 }
 
