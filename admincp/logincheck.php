@@ -19,8 +19,8 @@ $return= '<form action="index.php">
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("DB connectie mislukt");
 
-$myusername=$_POST['myusername']; 
-$mypassword=md5($_POST['mypassword']); 
+$myusername=mysql_real_escape_string($_POST['myusername']); 
+$mypassword=md5(mysql_real_escape_string($_POST['mypassword'])); 
 
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$mypassword'";
 $result=mysql_query($sql);

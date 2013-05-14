@@ -1,0 +1,28 @@
+html { 
+  background: url('bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#content
+{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	width:35em;
+	height:20em;
+	margin-top: -10em; /*set to a negative number 1/2 of your height*/
+	margin-left: -17em; /*set to a negative number 1/2 of your width*/
+ 	background-color:#ffffff;
+ 	border:1px solid black;
+  	opacity:0.6;
+  	filter:alpha(opacity=60); /* For IE8 and earlier */
+	overflow-y:scroll;
+}
+#content:hover
+{
+	opacity:0.85;
+	filter:alpha(opacity=85);
+}

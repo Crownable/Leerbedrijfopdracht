@@ -19,4 +19,6 @@ $return= '<form action="index.php">
 
 echo $return;
 
+header("location: index.php");
+
 ?>
